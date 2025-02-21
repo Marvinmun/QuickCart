@@ -7,7 +7,7 @@ import { Comment } from "postcss";
 export const inngest = new Inngest({ id: "quickcart-next" });
 
 
-export const syncuserCreation = inngest.createFuction(
+export const syncuserCreation = inngest.createFunction(
 
 {
     id:'sync-user-form-clerk'
@@ -25,7 +25,7 @@ await connectDB()
 await User.create(userData)
 }
 )
-export const syncUserUpdation = inngest.createFuction(
+export const syncUserUpdation = inngest.createFunction(
     {
         id: 'update-user-form-clerk'
     },
